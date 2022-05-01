@@ -5,7 +5,7 @@ from Door import Door
 door = Door(
     int(config("MOTOR_PIN1")), 
     int(config("MOTOR_PIN2")), 
-    10
+    int(config("MOTOR_DELAY"))
 )
 
 def on_connect(client, userdata, flags, rc):
